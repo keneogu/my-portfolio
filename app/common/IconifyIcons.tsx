@@ -17,3 +17,12 @@ export const ReactIcon = ({ size }: IconProps) => {
     />
   );
 };
+
+export const NextIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+      icon="teenyicons:nextjs-solid"
+      style={{ fontSize: `${sizeWithDefault(size)}`, color: 'black' }}
+    />
+  );
+};
