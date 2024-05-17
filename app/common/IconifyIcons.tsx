@@ -53,3 +53,12 @@ export const NodeIcon = ({ size }: IconProps) => {
     />
   );
 };
+
+export const RailsIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+      icon="vscode-icons:file-type-rails"
+      style={{ fontSize: `${sizeWithDefault(size)}` }}
+    />
+  );
+};
