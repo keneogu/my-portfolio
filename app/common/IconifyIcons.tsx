@@ -26,3 +26,12 @@ export const NextIcon = ({ size }: IconProps) => {
     />
   );
 };
+
+export const JsIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+      icon="akar-icons:javascript-fill"
+      style={{ fontSize: `${sizeWithDefault(size)}`, color: '#F0DB4F' }}
+    />
+  );
+};
