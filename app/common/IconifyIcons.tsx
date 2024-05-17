@@ -44,3 +44,12 @@ export const RubyIcon = ({ size }: IconProps) => {
     />
   );
 };
+
+export const NodeIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+      icon="vscode-icons:file-type-node"
+      style={{ fontSize: `${sizeWithDefault(size)}` }}
+    />
+  );
+};
