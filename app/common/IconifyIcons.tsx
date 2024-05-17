@@ -35,3 +35,12 @@ export const JsIcon = ({ size }: IconProps) => {
     />
   );
 };
+
+export const RubyIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+      icon="vscode-icons:file-type-ruby"
+      style={{ fontSize: `${sizeWithDefault(size)}` }}
+    />
+  );
+};
