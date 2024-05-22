@@ -62,3 +62,12 @@ export const RailsIcon = ({ size }: IconProps) => {
     />
   );
 };
+
+export const MongoDBIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+    icon="teenyicons:mongodb-solid"
+      style={{ fontSize: `${sizeWithDefault(size)}`, color: "#41a247" }}
+    />
+  );
+};
