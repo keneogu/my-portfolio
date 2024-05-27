@@ -71,3 +71,12 @@ export const MongoDBIcon = ({ size }: IconProps) => {
     />
   );
 };
+export const CalenderIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+    icon="uil:calender"
+      style={{ fontSize: `${sizeWithDefault(size)}` }}
+    />
+  );
+};
+
