@@ -79,4 +79,12 @@ export const CalenderIcon = ({ size }: IconProps) => {
     />
   );
 };
+export const EyeIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+    icon="teenyicons:eye-outline"
+      style={{ fontSize: `${sizeWithDefault(size)}` }}
+    />
+  );
+};
 
