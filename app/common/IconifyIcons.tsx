@@ -108,3 +108,12 @@ export const GithubIcon = ({ size }: IconProps) => {
     />
   );
 };
+
+export const LinkedInIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+      icon="mdi:linkedin"
+      style={{ fontSize: `${sizeWithDefault(size)}` }}
+    />
+  );
+};
