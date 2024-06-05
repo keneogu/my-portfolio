@@ -28,7 +28,7 @@ const HeaderSubsection = () => {
               />
             </h1>
             <p className="text-base sm:text-lg mb-6 lg:text-xl">
-              I’m a Full-Stack Engineer who strives to build performant web
+              I&#39;m a Full-Stack Engineer who strives to build performant web
               applications with a focus on user interaction and accessibility
               with JavaScript, TypeScript, Ruby, React, Next, Ruby on Rails and
               Node.

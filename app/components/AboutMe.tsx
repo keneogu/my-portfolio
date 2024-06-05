@@ -23,9 +23,9 @@ const AboutMe = () => {
               </div>
             </div>
             <div className="p-3 leading-8 py-11 items-center">
-              <h3 className='font-medium text-xl pb-3'>I'm Kenechukwu Oguagbaka and a Web Developer</h3>
+              <h3 className='font-medium text-xl pb-3'>I&#39;m Kenechukwu Oguagbaka and a Web Developer</h3>
               <p className='pb-2'>
-                I’m a full-stack engineer who strives to build performant web
+                I&#39;m a full-stack engineer who strives to build performant web
                 applications with a focus on user interaction and accessibility
                 with JavaScript, TypeScript, React, Next, Ruby, Ruby on Rails
                 and Node.

@@ -29,10 +29,10 @@ const Contact = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div>
-              <h4>Let's connect</h4>
+              <h4>Let&#39;s connect</h4>
               <p>
-                I'm currently looking for new opportunity, my inbox is always
-                open. Whether you have a question or just want to say hi! I'll
+                I&#39;m currently looking for new opportunity, my inbox is always
+                open. Whether you have a question or just want to say hi! I&#39;ll
                 try my best to get back to you!
               </p>
               <div className="flex gap-6">
