@@ -117,3 +117,30 @@ export const LinkedInIcon = ({ size }: IconProps) => {
     />
   );
 };
+
+export const TwitterIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+      icon="mdi:twitter"
+      style={{ fontSize: `${sizeWithDefault(size)}` }}
+    />
+  );
+};
+
+export const BarIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+      icon="uil:bars"
+      style={{ fontSize: `${sizeWithDefault(size)}` }}
+    />
+  );
+};
+
+export const XMarkIcon = ({ size }: IconProps) => {
+  return (
+    <Icon
+      icon="gravity-ui:xmark"
+      style={{ fontSize: `${sizeWithDefault(size)}` }}
+    />
+  );
+};
