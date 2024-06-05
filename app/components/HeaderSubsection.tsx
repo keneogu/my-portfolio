@@ -7,7 +7,7 @@ const HeaderSubsection = () => {
   return (
     <div>
       <Container>
-        <div className="flex flex-col md:grid grid-cols-2 justify-between items-center">
+        <div className="grid md:grid-cols-2 justify-between items-center">
           <div className="">
             <h1 className="mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold text">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-lime-color to-neon-color">
