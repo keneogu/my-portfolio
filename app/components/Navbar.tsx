@@ -65,8 +65,8 @@ const Navbar = () => {
             </div>
           </div>
           {navbarOpen ? (
-            <div className="w-full md:hidden bg-[rgba(226,232,240,.9)] dark:bg-[rgba(29,29,29,.9)]">
-              <ul className="w-full flex flex-col py-4 items-center">
+            <div className="md:hidden bg-[rgba(226,232,240,.9)] dark:bg-[rgba(29,29,29,.9)]">
+              <ul className="flex flex-col py-4 items-center">
                 <span className="pb-3">
                   <NavItems
                     title="My Skills"
