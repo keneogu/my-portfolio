@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="w-full dark:bg-[#0b0a0a]">
+    <section id="about" className="w-full dark:bg-[#0b0a0a]">
       <Container>
         <div className="w-full p-6">
         <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12">
@@ -47,7 +47,7 @@ const AboutMe = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 
