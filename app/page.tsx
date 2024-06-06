@@ -10,7 +10,7 @@ import Project from "./components/Projects/Project";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
         <Header />
         <Languages />
         <AboutMe />
