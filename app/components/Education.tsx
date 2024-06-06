@@ -127,18 +127,20 @@ const Education = () => {
                     </h4>
                     <p className="text-base text-justify">
                       <span>
-                        I ensured that the UI/UX design done with figma is the
-                        same as the frontend designs
+                        Ensure that website visitors can easily interact with
+                        the page
+                      </span>
+                      <br />
+                      <span>Developing and maintaining the user interface</span>
+                      <br />
+                      <span>
+                        Building out components and testing components with
+                        storybook.js
                       </span>
                       <br />
                       <span>
-                        I ensured that the functionalities are working properly
-                        before being moved to production
-                      </span>
-                      <br />
-                      <span>
-                        Write unit tests, Integration tests and e2e tests using
-                        Jest
+                        Using Next.js, TypeScript, React, and Tailwind to bring
+                        Figma design to life
                       </span>
                     </p>
                   </div>

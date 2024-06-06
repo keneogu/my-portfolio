@@ -10,22 +10,23 @@ export default function DarkMode() {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
-  
+    setMounted(true);
+  }, []);
+
   return (
     <div>
-      {mounted && (currentTheme === "dark" ? (
-        <MdLightMode
-          className="text-xl cursor-pointer"
-          onClick={() => setTheme("light")}
-        />
-      ) : (
-        <BsFillMoonFill
-          className="text-xl cursor-pointer"
-          onClick={() => setTheme("dark")}
-        />
-      ))}
+      {mounted &&
+        (currentTheme === "dark" ? (
+          <MdLightMode
+            className="text-xl cursor-pointer"
+            onClick={() => setTheme("light")}
+          />
+        ) : (
+          <BsFillMoonFill
+            className="text-xl cursor-pointer"
+            onClick={() => setTheme("dark")}
+          />
+        ))}
     </div>
   );
 }
