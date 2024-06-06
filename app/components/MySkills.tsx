@@ -2,7 +2,7 @@ import Container from "./Container";
 
 const MySkills = () => {
   return (
-    <div>
+    <section id="skills">
       <Container>
         <div className="w-full p-6">
         <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12">
@@ -94,7 +94,7 @@ const MySkills = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 
