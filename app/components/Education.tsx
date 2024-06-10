@@ -50,7 +50,7 @@ const Education = () => {
                 </div>
               </div>
             </div>
-            <div className="grow-0 shrink-0 basis-3/6 mt-8">
+            <div className="grow-0 shrink-0 basis-3/6 mt-6">
               <h3 className=" mb-5 font-bold text-center">Experience</h3>
               <div className="grow-0 shrink-0 basis-full">
                 <div className="w-full py-8 px-4 border-4 drop-shadow-lg shadow-xl dark:shadow-white">
