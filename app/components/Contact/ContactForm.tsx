@@ -54,7 +54,7 @@ const ContactForm: React.FC<IContactForm> = ({ formik }) => {
         touched={formik.touched}
       />
       <Button
-        children="Submit"
+        context="Submit"
         w="w-auto"
         flex="flex justify-self-end"
         onClick={formik.handleSubmit}

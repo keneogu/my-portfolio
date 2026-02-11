@@ -1,5 +1,6 @@
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode;
+  context?: string;
   bg?: string;
   color?: string;
   m?: string;
@@ -14,6 +15,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const Button: React.FC<ButtonProps> = ({
   children,
+  context,
   bg,
   color,
   py,
@@ -37,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({
         } font-semibold`}
         {...props}
     >
-        {children}
+        {context}
     </button>
     </>
   );
