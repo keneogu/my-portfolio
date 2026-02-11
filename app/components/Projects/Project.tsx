@@ -10,6 +10,8 @@ const Project = () => {
   const [tag, setTag] = useState("All");
   const ref = useRef(null);
 
+  const tags = ["All", "Web", "Mobile"]
+
   const handleTagChange = (newTag: string) => {
     setTag(newTag);
   };
@@ -22,25 +24,18 @@ const Project = () => {
     <section id="projects">
       <Container>
         <div className="w-full p-6">
-          <h2 className="text-center text-4xl font-bold mt-4 mb-8 md:mb-12">
+          <h2 className="text-center text-4xl font-bold mt-4 mb-6 md:mb-12">
             My Projects
           </h2>
-          <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-            <ProjectTag
-              onClick={handleTagChange}
-              name="All"
-              isSelected={tag === "All"}
-            />
-            <ProjectTag
-              onClick={handleTagChange}
-              name="Web"
-              isSelected={tag === "Web"}
-            />
-            <ProjectTag
-              onClick={handleTagChange}
-              name="Mobile"
-              isSelected={tag === "Mobile"}
-            />
+          <div className="text-white flex flex-row justify-center items-center gap-2 mb-4 py-6">
+            {tags.map((name) => (
+              <ProjectTag
+                key={name}
+                onClick={handleTagChange}
+                name={name}
+                isSelected={tag === name}
+              />
+            ))}
           </div>
           <div>
             {filteredProjects.length === 0 ? (
@@ -48,7 +43,8 @@ const Project = () => {
                 <p className="text-center">No Projects On this Category Yet.</p>
               </div>
             ) : (
-              <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+              <ul ref={ref} className="grid
+               sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
                 {filteredProjects.map((project, index) => (
                   <ProjectCard
                     key={project.id}

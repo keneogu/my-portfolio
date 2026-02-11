@@ -11,7 +11,7 @@ const AboutMe = () => {
             About Me!
           </h2>
           <div className="flex flex-col lg:grid grid-cols-2 justify-between text-center my-9 py-6">
-            <div className="text-center flex items-center justify-center bg-light-bg dark:bg-dark-bg bg-cover bg-no-repeat bg-center py-11">
+            <div className="hidden text-center lg:flex items-center justify-center bg-light-bg dark:bg-dark-bg bg-cover bg-no-repeat bg-center py-11">
               <div className="rounded-full relative w-[200px] h-[200px] lg:w-[400px] lg:h-[400px] justify-self-center">
                 <Image
                   src="/images/projects/profile.png"

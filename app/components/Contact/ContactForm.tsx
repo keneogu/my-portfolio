@@ -2,6 +2,7 @@ import React from "react";
 import { FormikProps } from "formik";
 import Input from "./Input";
 import Textarea from "./Textarea";
+import Button from "./button";
 
 export interface IContact {
   name: string;
@@ -51,6 +52,12 @@ const ContactForm: React.FC<IContactForm> = ({ formik }) => {
         onChange={formik.handleChange}
         error={formik.errors}
         touched={formik.touched}
+      />
+      <Button
+        children="Submit"
+        w="w-auto"
+        flex="flex justify-self-end"
+        onClick={formik.handleSubmit}
       />
     </div>
   );

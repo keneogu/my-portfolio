@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import Container from "../Container";
 import {
@@ -10,15 +11,47 @@ import ContactForm from "./ContactForm";
 import { useFormik } from "formik";
 
 const Contact = () => {
+    const [status, setStatus] = useState<
+    { type: "idle" | "success" | "error"; message?: string } 
+  >({ type: "idle" });
   const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
       message: "",
     },
-    onSubmit: async (values) => {
-      return null;
+    onSubmit: async (values, { resetForm, setSubmitting }) => {
+      setStatus({ type: "idle" });
+
+     try {
+        const res = await fetch(
+          process.env.NEXT_PUBLIC_CONTACT_API_URL ?? "http://localhost:8080/api/contact",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(values),
+          }
+        );
+
+        let data: any = null;
+        try {
+          data = await res.json();
+        } catch {}
+
+        if (!res.ok) {
+          throw new Error(data?.message || "Failed to send message.");
+        }
+          setStatus({ type: "success", message: data?.message || "Message sent successfully!" });
+        resetForm();
+      } catch (err: any) {
+        setStatus({ type: "error", message: err?.message || "Something went wrong." });
+      } finally {
+        setSubmitting(false);
+      }
     },
+
   });
   return (
     <section id="contact">

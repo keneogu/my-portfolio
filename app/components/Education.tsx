@@ -12,7 +12,7 @@ const Education = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div className="grow-0 shrink-0 basis-3/6 mt-6">
-              <h3 className="mb-5 font-bold text-center">Education</h3>
+              <h3 className="py-5 font-bold text-center text-2xl">Education</h3>
               <div className="grow-0 shrink-0 basis-full">
                 <div className="w-full py-8 px-4 border-4 drop-shadow-lg shadow-xl dark:shadow-white">
                   <div className="relative mb-4">
@@ -51,7 +51,7 @@ const Education = () => {
               </div>
             </div>
             <div className="grow-0 shrink-0 basis-3/6 mt-6">
-              <h3 className=" mb-5 font-bold text-center">Experience</h3>
+              <h3 className="py-5 font-bold text-center text-2xl">Experience</h3>
               <div className="grow-0 shrink-0 basis-full">
                 <div className="w-full py-8 px-4 border-4 drop-shadow-lg shadow-xl dark:shadow-white">
                   <div className="relative mb-4">
